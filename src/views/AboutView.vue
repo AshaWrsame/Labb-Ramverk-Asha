@@ -86,7 +86,7 @@ export default {
 <style scoped>
 .weather-container {
   text-align: center;
-  font-family: Arial, sans-serif;
+
   padding: 0;
   background-size: cover;
   background-position: top center;

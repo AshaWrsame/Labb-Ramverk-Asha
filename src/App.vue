@@ -27,8 +27,11 @@ import { RouterView } from 'vue-router';
 
 <style scoped>
 .navbar {
-  background-color: rgba(51, 51, 51, 0.5); /* Dark gray with 70% opacity */
+  background-color: rgba(51, 51, 51, 0.5);
   padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
 }
 
 .navbar .container {
@@ -58,7 +61,7 @@ import { RouterView } from 'vue-router';
 }
 
 .footer {
-  background-color: rgba(51, 51, 51, 0.5); /* Same transparency as navbar */
+  background-color: rgba(51, 51, 51, 0.5);
   color: white;
   text-align: center;
   padding: 20px 0;
