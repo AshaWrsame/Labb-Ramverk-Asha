@@ -1,6 +1,12 @@
 <script>
 export default {
-  name:'Nav-Bar'
+  name:'NavBar',
+  props:{
+    currentPage: {
+      type: String,
+      required: true
+    }
+  }
 }
 </script>
 <template>
@@ -8,10 +14,10 @@ export default {
     <div class="container">
       <ul class="navbar-list">
         <li class="navbar-item">
-          <router-link to="/" class="navbar-link">Home</router-link>
+          <router-link to="/" class="navbar-link" :class="{active: currentPage === 'home'}" >Home</router-link>
         </li>
         <li class="navbar-item">
-          <router-link to="/about" class="navbar-link">About</router-link>
+          <router-link to="/about" class="navbar-link" :class="{active: currentPage === 'about'}">About</router-link>
         </li>
       </ul>
     </div>
@@ -49,6 +55,9 @@ export default {
   }
 
   .navbar-link:hover {
-    color: #ff6347;
+    color:  grey;
   }
+  .navbar-link.active {
+    background-color: rgba(51, 51, 51, 0.7);;
+    }
 </style>
