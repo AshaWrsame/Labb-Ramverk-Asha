@@ -108,6 +108,51 @@
         </div>
       </div>
     </section>
+    <section class="tips">
+  <h2>Travel Tips</h2>
+  <div class="tips-container">
+    <div class="tip-box">
+      <h3 class="tip-h">Sunny Weather</h3>
+      <ul>
+        <li>Stay Hydrated: The sun can dehydrate you quickly, so make sure to drink plenty of water throughout the day. Carry a reusable water bottle to refill as needed.</li>
+        <li>Wear Sunscreen: Protect your skin from harmful UV rays by applying sunscreen with a high SPF, even on cloudy days. Reapply every 2-3 hours, especially if you're sweating or swimming.</li>
+        <li>Dress in Light, Breathable Clothing: Opt for lightweight fabrics like cotton or linen to keep cool. Light-colored clothes will reflect the sun and help prevent overheating.</li>
+
+      </ul>
+    </div>
+
+    <div class="tip-box">
+      <h3 class="tip-h">Cloudy Weather</h3>
+      <ul>
+        <li>Light Layers: The temperature can fluctuate, so it's best to wear layers that you can add or remove depending on how warm or cool it feels. A light jacket or sweater will be helpful.</li>
+        <li>Pack an Umbrella or Light Rain Jacket: While cloudy weather may not always bring rain, it's always a good idea to be prepared just in case. A compact umbrella or a waterproof jacket can keep you dry if a drizzle arrives.</li>
+        <li>Comfortable Shoes: The weather may be a bit unpredictable, so wear shoes that are comfortable for walking, and preferably waterproof in case of light showers.</li>
+
+      </ul>
+    </div>
+
+    <div class="tip-box">
+      <h3 class="tip-h">Snowy Weather</h3>
+      <ul>
+        <li>Layer Up: Snowy weather can be very cold, so layering is key. Wear thermal base layers, a warm sweater, and an insulated coat to keep yourself cozy.</li>
+        <li>Wear Waterproof Boots: Make sure your shoes are waterproof and have good grip to prevent slipping on icy sidewalks. Insulated boots will also help keep your feet warm.</li>
+        <li>Protect Your Skin: Cold, dry air can cause skin to crack and become irritated, so use a rich moisturizer and lip balm to keep your skin hydrated.</li>
+
+      </ul>
+    </div>
+
+    <div class="tip-box">
+      <h3 class="tip-h">Rainy Weather</h3>
+      <ul>
+        <li>Pack a Waterproof Jacket and Umbrella: Make sure you have a reliable waterproof jacket and a compact, sturdy umbrella to stay dry while you explore. Choose a jacket with a hood to keep your head dry.</li>
+        <li>Choose Waterproof Gear: Look for waterproof or water-resistant shoes, bags, and clothing to stay dry. This will help prevent discomfort and protect your belongings from getting wet.</li>
+        <li>Plan for Indoor Activities: While it's always nice to be outside, rainy weather can offer the perfect excuse to check out museums, galleries, or indoor markets. Use the rain as an opportunity to explore the local culture indoors.</li>
+
+      </ul>
+    </div>
+  </div>
+</section>
+
   </main>
 </template>
 
@@ -156,8 +201,9 @@
   background-color: #f0f0f0;
 }
 .destination-container {
+  margin-top: 50px;
   padding: 40px 20px;
-  background-color: #f9f9f9;
+  background-color: #e7f2f8;
   text-align: center;
 }
 
@@ -197,5 +243,59 @@
   100% {
     transform: translateX(-50%);
   }
+}
+.tips {
+  margin-top: 50px;
+  margin-bottom: 100px;
+  padding: 40px 20px;
+  background-color: #eaf5fb;
+  text-align: center;
+}
+
+.tips h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.tips-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.tip-box {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  padding: 20px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tip-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.tip-h {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #242c34;
+}
+
+.tip-box ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.tip-box ul li {
+  margin-bottom: 10px;
 }
 </style>
